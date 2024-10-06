@@ -11,10 +11,23 @@
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
-         // Create a dummy node to simplify edge cases
-        ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
-        
+        // Handle the edge case where one of the lists is empty
+        if (list1 == null) return list2;
+        if (list2 == null) return list1;
+
+        // Initialize the head of the merged list
+        ListNode head;
+        if (list1.val <= list2.val) {
+            head = list1;
+            list1 = list1.next;
+        } else {
+            head = list2;
+            list2 = list2.next;
+        }
+
+        // Current node points to the last node of the merged list
+        ListNode current = head;
+
         // Traverse both lists
         while (list1 != null && list2 != null) {
             if (list1.val <= list2.val) {
@@ -26,16 +39,15 @@ class Solution {
             }
             current = current.next;
         }
-        
+
         // Attach the remaining part of list1 or list2
         if (list1 != null) {
             current.next = list1;
         } else {
             current.next = list2;
         }
-        
-        // Return the merged list starting from the node next to dummy
-        return dummy.next;
 
+        // Return the head of the merged list
+        return head;
     }
 }
