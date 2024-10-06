@@ -11,11 +11,11 @@
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
 
-        // Handle the edge case where one of the lists is empty
+        // Handle cases where either list is empty
         if (list1 == null) return list2;
         if (list2 == null) return list1;
 
-        // Initialize the head of the merged list
+        // Determine the head of the merged list
         ListNode head;
         if (list1.val <= list2.val) {
             head = list1;
@@ -25,10 +25,10 @@ class Solution {
             list2 = list2.next;
         }
 
-        // Current node points to the last node of the merged list
+        // Set the current node to the head of the merged list
         ListNode current = head;
 
-        // Traverse both lists
+        // Iterate through both lists and merge
         while (list1 != null && list2 != null) {
             if (list1.val <= list2.val) {
                 current.next = list1;
@@ -40,14 +40,9 @@ class Solution {
             current = current.next;
         }
 
-        // Attach the remaining part of list1 or list2
-        if (list1 != null) {
-            current.next = list1;
-        } else {
-            current.next = list2;
-        }
+        // Attach the remaining part of the non-exhausted list
+        current.next = (list1 != null) ? list1 : list2;
 
-        // Return the head of the merged list
         return head;
     }
 }
