@@ -29,7 +29,7 @@ class Solution {
                 i++;
             }
         }
-        for(int num: temp){print(num+"");}
+        // for(int num: temp){print(num+"");}
         for(int z = 0; z < nums.length; z++){
             if(z < total){nums[z] = temp[z];}
             else{nums[z] = 0;}
