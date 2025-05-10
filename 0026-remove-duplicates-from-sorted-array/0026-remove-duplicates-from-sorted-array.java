@@ -16,11 +16,6 @@ class Solution {
             }
         }
 
-        
-
-        //System.out.println(Arrays.toString(nums));
-        //System.out.println(count);
-
         return count;
     }
 }
