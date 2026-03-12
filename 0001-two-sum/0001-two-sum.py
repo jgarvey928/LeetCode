@@ -1,7 +1,14 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-
-        for ind1 in range(len(nums)):
-            for ind2 in range(1,len(nums)):
-                if nums[ind1] + nums[ind2] == target and ind1 != ind2:
-                    return [ind1, ind2]
+        # Dictionary to store the number and its index
+        num_map = {}
+        
+        for i, num in enumerate(nums):
+            complement = target - num
+            
+            # If the complement exists in our map, we found the pair!
+            if complement in num_map:
+                return [num_map[complement], i]
+            
+            # Otherwise, add the current number and its index to the map
+            num_map[num] = i
