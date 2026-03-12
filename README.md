@@ -24,7 +24,7 @@ Here is a list of the problems currently solved in this repository:
 | 0006 | Zigzag Conversion | 🟠 Medium | Python | [View](./0006-zigzag-conversion) | N/A |
 | 0007 | Reverse Integer | 🟠 Medium | Python | [View](./0007-reverse-integer) | N/A |
 | 0009 | Palindrome Number | 🟢 Easy | Java | [View](./0009-palindrome-number) | N/A |
-| 0013 | Roman To Integer | 🟢 Easy | Java, Python | [View](./0013-roman-to-integer) | N/A |
+| 0013 | Roman To Integer | 🟢 Easy | Java, Python | [View](./0013-roman-to-integer) | Hash Table, Math, String |
 | 0014 | Longest Common Prefix | 🟢 Easy | Java | [View](./0014-longest-common-prefix) | N/A |
 | 0021 | Merge Two Sorted Lists | 🟢 Easy | Java | [View](./0021-merge-two-sorted-lists) | N/A |
 | 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | Java | [View](./0026-remove-duplicates-from-sorted-array) | N/A |
@@ -40,17 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | [View](./2383-add-two-integers) | N/A |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Hash Table
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0013-roman-to-integer](https://github.com/jgarvey928/LeetCode/tree/main/0013-roman-to-integer/) | Easy |
-## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0013-roman-to-integer](https://github.com/jgarvey928/LeetCode/tree/main/0013-roman-to-integer/) | Easy |
-## String
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0013-roman-to-integer](https://github.com/jgarvey928/LeetCode/tree/main/0013-roman-to-integer/) | Easy |
 <!---LeetCode Topics End-->
