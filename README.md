@@ -37,3 +37,4 @@ Here is a list of the problems currently solved in this repository:
 | 1791 | Find Center Of Star Graph | 🟢 Easy | [View](./1791-find-center-of-star-graph) | N/A |
 | 1916 | Find Center Of Star Graph | 🟢 Easy | [View](./1916-find-center-of-star-graph) | N/A |
 | 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) | N/A |
+
