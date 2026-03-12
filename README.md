@@ -38,11 +38,3 @@ Here is a list of the problems currently solved in this repository:
 - Optimize solutions for better Time and Space complexities.
 - Explore different approaches for the same problem (e.g., Iterative vs. Recursive, Dynamic Programming vs. Greedy).
 
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0006-zigzag-conversion](https://github.com/jgarvey928/LeetCode/tree/main/0006-zigzag-conversion/) | Medium |
-<!---LeetCode Topics End-->
