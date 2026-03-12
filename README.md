@@ -20,7 +20,7 @@ Here is a list of the problems currently solved in this repository:
 | 0001 | Two Sum | 🟢 Easy | [View](./0001-two-sum) | Array, Hash Table |
 | 0002 | Add Two Numbers | 🟠 Medium | [View](./0002-add-two-numbers) | N/A |
 | 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | [View](./0003-longest-substring-without-repeating-characters) | Hash Table, String, Sliding Window |
-| 0004 | Median Of Two Sorted Arrays | 🔴 Hard | [View](./0004-median-of-two-sorted-arrays) | N/A |
+| 0004 | Median Of Two Sorted Arrays | 🔴 Hard | [View](./0004-median-of-two-sorted-arrays) | Array, Binary Search, Divide and Conquer |
 | 0006 | Zigzag Conversion | 🟠 Medium | [View](./0006-zigzag-conversion) | String |
 | 0007 | Reverse Integer | 🟠 Medium | [View](./0007-reverse-integer) | Math |
 | 0009 | Palindrome Number | 🟢 Easy | [View](./0009-palindrome-number) | N/A |
@@ -40,17 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) | N/A |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0004-median-of-two-sorted-arrays](https://github.com/jgarvey928/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
-## Binary Search
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0004-median-of-two-sorted-arrays](https://github.com/jgarvey928/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
-## Divide and Conquer
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0004-median-of-two-sorted-arrays](https://github.com/jgarvey928/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
 <!---LeetCode Topics End-->
