@@ -21,7 +21,7 @@ Here is a list of the problems currently solved in this repository:
 | 0002 | Add Two Numbers | 🟠 Medium | [View](./0002-add-two-numbers) | N/A |
 | 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | [View](./0003-longest-substring-without-repeating-characters) | N/A |
 | 0004 | Median Of Two Sorted Arrays | 🔴 Hard | [View](./0004-median-of-two-sorted-arrays) | N/A |
-| 0006 | Zigzag Conversion | 🟠 Medium | [View](./0006-zigzag-conversion) | N/A |
+| 0006 | Zigzag Conversion | 🟠 Medium | [View](./0006-zigzag-conversion) | String |
 | 0007 | Reverse Integer | 🟠 Medium | [View](./0007-reverse-integer) | N/A |
 | 0009 | Palindrome Number | 🟢 Easy | [View](./0009-palindrome-number) | N/A |
 | 0013 | Roman To Integer | 🟢 Easy | [View](./0013-roman-to-integer) | N/A |
@@ -40,9 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) | N/A |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## String
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0006-zigzag-conversion](https://github.com/jgarvey928/LeetCode/tree/main/0006-zigzag-conversion/) | Medium |
 <!---LeetCode Topics End-->
