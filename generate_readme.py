@@ -1,7 +1,6 @@
 import os
 import re
 
-# The updated template without the bottom sections and with the new column
 README_TEMPLATE = """# 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
@@ -37,10 +36,10 @@ def main():
         
         link = f"./{d}"
         
-        # Placeholder for Problem Type since we can't guess it from the folder name
-        problem_type = "TBD"
+        # Blank problem type since we are not using extra files
+        problem_type = ""
 
-        # Add the row to our table with the new column
+        # Add the row to our single table
         table_rows.append(f"| {num} | {name} | {problem_type} | [View]({link}) |")
 
     # Combine all rows
@@ -49,7 +48,7 @@ def main():
     # Insert the table into the template
     readme_content = README_TEMPLATE.format(table_content=table_content)
 
-    # Overwrite the README.md with the new content
+    # Overwrite the README.md entirely, destroying any manually added sections at the bottom
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(readme_content)
 
