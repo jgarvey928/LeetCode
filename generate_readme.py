@@ -1,7 +1,6 @@
 import os
 import re
 
-# We put the invisible tags at the very bottom so the extension has a place to drop data!
 README_TEMPLATE = """# 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
@@ -26,49 +25,48 @@ Here is a list of the problems currently solved in this repository:
 """
 
 def get_existing_topics():
-    """Scans the current README to extract topics from BOTH the existing table and the extension's footer."""
+    """Scans the current README to extract topics line-by-line to prevent formatting crashes."""
     topic_map = {}
     if not os.path.exists('README.md'):
         return topic_map
 
-    try:
-        with open('README.md', 'r', encoding='utf-8') as f:
-            content = f.read()
-            
-            # 1. RESCUE PREVIOUSLY SAVED TOPICS FROM OUR CLEAN TABLE
-            for line in content.split('\n'):
-                if line.startswith('|') and '[View]' in line:
-                    parts = line.split('|')
-                    if len(parts) >= 6:
-                        num = parts[1].strip()
-                        topics = parts[5].strip()
-                        if topics and topics != "N/A":
-                            topic_map[num] = [t.strip() for t in topics.split(',')]
+    with open('README.md', 'r', encoding='utf-8') as f:
+        content = f.read()
 
-            # 2. GRAB NEW TOPICS FROM THE EXTENSION'S MESSY FOOTER
-            if '' in content:
-                topics_section = content.split('')[1]
-                if '' in topics_section:
-                    topics_section = topics_section.split('')[0]
+    # 1. RESCUE PREVIOUSLY SAVED TOPICS
+    for line in content.split('\n'):
+        if line.startswith('|') and '[View]' in line:
+            parts = line.split('|')
+            if len(parts) >= 6:
+                num = parts[1].strip()
+                topics = parts[5].strip()
+                if topics and topics != "N/A":
+                    topic_map[num] = [t.strip() for t in topics.split(',')]
+
+    # 2. PARSE NEW TOPICS FROM THE EXTENSION'S FOOTER (Line-by-line method)
+    if '' in content and '' in content:
+        block = content.split('')[1].split('')[0]
+        
+        current_topic = ""
+        for line in block.split('\n'):
+            line = line.strip()
+            
+            # If the line is a header like "## Array"
+            if line.startswith('## '):
+                # Remove the "## " to just get "Array"
+                current_topic = line.replace('##', '').strip()
                 
-                sections = topics_section.split('## ')
-                for section in sections[1:]:
-                    lines = section.strip().split('\n')
-                    if not lines:
-                        continue
-                    
-                    current_topic = lines[0].strip()
-                    
-                    # Match [XXXX- to find problem numbers
-                    problem_ids = re.findall(r'\[(\d{4})-', section)
-                    
-                    for pid in problem_ids:
-                        if pid not in topic_map:
-                            topic_map[pid] = []
-                        if current_topic not in topic_map[pid]:
-                            topic_map[pid].append(current_topic)
-    except Exception:
-        pass
+            # If the line is a table row containing a problem link
+            elif current_topic and line.startswith('|') and '[' in line:
+                # Look for the 4-digit number, e.g., [0001-two-sum]
+                match = re.search(r'\[(\d{4})-', line)
+                if match:
+                    pid = match.group(1) # Extracts "0001"
+                    if pid not in topic_map:
+                        topic_map[pid] = []
+                    if current_topic not in topic_map[pid]:
+                        topic_map[pid].append(current_topic)
+                        
     return topic_map
 
 def get_difficulty_from_readme(folder_path):
@@ -106,7 +104,6 @@ def main():
         name = ' '.join(word.capitalize() for word in name_parts)
         
         link = f"./{d}"
-        
         difficulty = get_difficulty_from_readme(d)
         
         # 3. Get the topics we safely recorded. Join them, or use N/A if missing.
@@ -118,8 +115,6 @@ def main():
         table_rows.append(f"| {num} | {name} | {difficulty} | [View]({link}) | {topics_list} |")
 
     table_content = '\n'.join(table_rows)
-    
-    # 4. Generate the clean README content
     readme_content = README_TEMPLATE.format(table_content=table_content)
 
     # Overwrite the main README.md entirely
