@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-    # I removed the 'paths' rule here! Now it runs on EVERY push.
 
 jobs:
   update-readme:
@@ -20,17 +19,26 @@ jobs:
         with:
           python-version: '3.x'
 
+      # 1. Wait 15 seconds to let the LeetCode extension finish ALL its back-to-back saves
+      - name: Wait for extension to finish
+        run: sleep 15
+
+      # 2. Pull the absolute latest code with the extension's topics included
+      - name: Sync latest changes
+        run: |
+          git pull origin main --rebase
+
+      # 3. NOW run our script
       - name: Run script to completely overwrite README
         run: python generate_readme.py
 
+      # 4. Save and forcefully push the clean README back to GitHub
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           
-          # If the python script changed the README, save it and force push it!
           git diff --quiet && git diff --staged --quiet || git commit -m "docs: auto-update README table and clean up extension"
           
-          git pull origin main --rebase
           git push origin main
