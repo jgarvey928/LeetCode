@@ -38,3 +38,11 @@ Here is a list of the problems currently solved in this repository:
 - Optimize solutions for better Time and Space complexities.
 - Explore different approaches for the same problem (e.g., Iterative vs. Recursive, Dynamic Programming vs. Greedy).
 
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0007-reverse-integer](https://github.com/jgarvey928/LeetCode/tree/main/0007-reverse-integer/) | Medium |
+<!---LeetCode Topics End-->
