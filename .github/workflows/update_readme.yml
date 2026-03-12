@@ -5,7 +5,6 @@ on:
     branches:
       - main
 
-# This stops the bot from running twice at the exact same time
 concurrency:
   group: readme-update
   cancel-in-progress: true
@@ -24,9 +23,9 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Wait to make sure the extension is completely finished saving
+      # Bumped to 30 seconds to make absolutely sure the extension finishes its second commit
       - name: Wait for extension to finish
-        run: sleep 15
+        run: sleep 30
 
       - name: Sync latest changes
         run: git pull origin main --rebase
