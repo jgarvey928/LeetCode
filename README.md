@@ -18,7 +18,7 @@ Here is a list of the problems currently solved in this repository:
 | # | Problem Name | Difficulty | Link to Solution | Topics |
 |---|---|:---:|---|---|
 | 0001 | Two Sum | 🟢 Easy | [View](./0001-two-sum) | Array, Hash Table |
-| 0002 | Add Two Numbers | 🟠 Medium | [View](./0002-add-two-numbers) | N/A |
+| 0002 | Add Two Numbers | 🟠 Medium | [View](./0002-add-two-numbers) | Linked List, Math, Recursion |
 | 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | [View](./0003-longest-substring-without-repeating-characters) | Hash Table, String, Sliding Window |
 | 0004 | Median Of Two Sorted Arrays | 🔴 Hard | [View](./0004-median-of-two-sorted-arrays) | Array, Binary Search, Divide and Conquer |
 | 0006 | Zigzag Conversion | 🟠 Medium | [View](./0006-zigzag-conversion) | String |
@@ -40,17 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) | N/A |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0002-add-two-numbers](https://github.com/jgarvey928/LeetCode/tree/main/0002-add-two-numbers/) | Medium |
-## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0002-add-two-numbers](https://github.com/jgarvey928/LeetCode/tree/main/0002-add-two-numbers/) | Medium |
-## Recursion
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0002-add-two-numbers](https://github.com/jgarvey928/LeetCode/tree/main/0002-add-two-numbers/) | Medium |
 <!---LeetCode Topics End-->
