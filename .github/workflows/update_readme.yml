@@ -1,42 +1,44 @@
 name: Auto-Update README
 
-# This tells GitHub to run the action whenever you push to the 'main' branch
 on:
   push:
     branches:
       - main
     paths:
-      - '[0-9][0-9][0-9][0-9]-**/*' # Only triggers when a problem folder is added or changed
+      - '[0-9][0-9][0-9][0-9]-**/*'
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      # 1. Grab your code
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # 3. Run the script we just made
+      # 1. Wait 15 seconds to let the LeetCode extension finish its automatic commits
+      - name: Wait for extension to finish
+        run: sleep 10
+
+      # 2. Pull the latest code (which will include the extension's messy README)
+      - name: Sync latest changes
+        run: git pull origin main
+
+      # 3. NOW run our script, which will completely overwrite the messy README with our clean one
       - name: Run script to update README
         run: python generate_readme.py
 
-# 4. Commit and push the new README back to your repository
+      # 4. Save and forcefully push the clean README back to GitHub
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           
-          # Only commit if the README actually changed
-          git diff --quiet && git diff --staged --quiet || git commit -m "docs: auto-update README table"
+          git diff --quiet && git diff --staged --quiet || git commit -m "docs: auto-update README table and clean up extension mess"
           
-          # Sync with the remote repository to prevent conflicts before pushing
-          git pull origin main --rebase
-          
+          # Push the clean README
           git push
