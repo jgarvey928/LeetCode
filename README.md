@@ -33,16 +33,11 @@ Here is a list of the problems currently solved in this repository:
 | 0088 | Merge Sorted Array | 🟢 Easy | Python | [View](./0088-merge-sorted-array) | N/A |
 | 0121 | Best Time To Buy And Sell Stock | 🟢 Easy | Java | [View](./0121-best-time-to-buy-and-sell-stock) | N/A |
 | 0169 | Majority Element | 🟢 Easy | Python | [View](./0169-majority-element) | N/A |
-| 0595 | Big Countries | 🟢 Easy | SQL | [View](./0595-big-countries) | N/A |
+| 0595 | Big Countries | 🟢 Easy | SQL | [View](./0595-big-countries) | Database |
 | 1603 | Running Sum Of 1d Array | 🟢 Easy | Java | [View](./1603-running-sum-of-1d-array) | N/A |
 | 1791 | Find Center Of Star Graph | 🟢 Easy | Java | [View](./1791-find-center-of-star-graph) | N/A |
 | 1916 | Find Center Of Star Graph | 🟢 Easy | Java | [View](./1916-find-center-of-star-graph) | N/A |
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | [View](./2383-add-two-integers) | N/A |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Database
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0595-big-countries](https://github.com/jgarvey928/LeetCode/tree/main/0595-big-countries/) | Easy |
 <!---LeetCode Topics End-->
