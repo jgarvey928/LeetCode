@@ -43,3 +43,11 @@ Feel free to explore the solutions. If you find a better or more optimized appro
 
 ---
 *Happy Coding! 💻*
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0007-reverse-integer](https://github.com/jgarvey928/LeetCode/tree/main/0007-reverse-integer/) | Medium |
+<!---LeetCode Topics End-->
