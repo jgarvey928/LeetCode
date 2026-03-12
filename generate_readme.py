@@ -24,7 +24,7 @@ Here is a list of the problems currently solved in this repository:
 """
 
 def get_existing_topics():
-    """Scans the current README to extract topics from the extension's footer before it's deleted."""
+    """Scans the current README to extract topics from BOTH the existing table and the extension's footer."""
     topic_map = {}
     if not os.path.exists('README.md'):
         return topic_map
@@ -32,23 +32,32 @@ def get_existing_topics():
     try:
         with open('README.md', 'r', encoding='utf-8') as f:
             content = f.read()
-            # Look specifically for the LeetCode Topics block
+            
+            # 1. RESCUE PREVIOUSLY SAVED TOPICS FROM OUR CLEAN TABLE
+            for line in content.split('\n'):
+                if line.startswith('|') and '[View]' in line:
+                    parts = line.split('|')
+                    if len(parts) >= 6:
+                        num = parts[1].strip()
+                        topics = parts[5].strip()
+                        if topics and topics != "N/A":
+                            topic_map[num] = [t.strip() for t in topics.split(',')]
+
+            # 2. GRAB NEW TOPICS FROM THE EXTENSION'S MESSY FOOTER
             if '' in content:
-                # Extract just the topics section
-                topics_section = content.split('')[1].split('')[0]
+                topics_section = content.split('')[1]
+                if '' in topics_section:
+                    topics_section = topics_section.split('')[0]
                 
-                # Split by ## headers to find the Topic Names
-                # Example: ## Array
                 sections = topics_section.split('## ')
-                for section in sections[1:]: # Skip the first bit before the first header
+                for section in sections[1:]:
                     lines = section.strip().split('\n')
                     if not lines:
                         continue
                     
-                    current_topic = lines[0].strip() # This is "Array", "Binary Search", etc.
+                    current_topic = lines[0].strip()
                     
-                    # Find all 4-digit problem numbers in this section
-                    # Looks for [XXXX-
+                    # Match [XXXX- to find problem numbers
                     problem_ids = re.findall(r'\[(\d{4})-', section)
                     
                     for pid in problem_ids:
@@ -79,7 +88,7 @@ def get_difficulty_from_readme(folder_path):
     return "⚪ TBD"
 
 def main():
-    # 1. Grab topics from the current README before we overwrite it
+    # 1. Grab all topics before we overwrite the file
     topic_map = get_existing_topics()
 
     # 2. Find all problem directories
@@ -91,22 +100,19 @@ def main():
         parts = d.split('-', 1)
         num = parts[0]
         
-        # Format name from folder string
         name_parts = parts[1].split('-')
         name = ' '.join(word.capitalize() for word in name_parts)
         
         link = f"./{d}"
         
-        # Get difficulty from the folder's README
         difficulty = get_difficulty_from_readme(d)
         
-        # 3. Get the topics we recorded. Join them with commas, or use N/A if missing.
+        # 3. Get the topics we safely recorded. Join them, or use N/A if missing.
         if num in topic_map and topic_map[num]:
             topics_list = ", ".join(topic_map[num])
         else:
             topics_list = "N/A"
 
-        # Add the row (Topics is the wide final column)
         table_rows.append(f"| {num} | {name} | {difficulty} | [View]({link}) | {topics_list} |")
 
     table_content = '\n'.join(table_rows)
@@ -114,7 +120,7 @@ def main():
     # 4. Generate the clean README content
     readme_content = README_TEMPLATE.format(table_content=table_content)
 
-    # Overwrite the main README.md
+    # Overwrite the main README.md entirely
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(readme_content)
 
