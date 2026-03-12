@@ -33,14 +33,17 @@ def get_difficulty_from_readme(folder_path):
         
     try:
         with open(readme_path, 'r', encoding='utf-8') as f:
-            for line in f:
-                # The LeetCode extension formats it as an h2 tag like "## Easy"
-                if '## Easy' in line:
-                    return "🟢 Easy"
-                elif '## Medium' in line:
-                    return "🟠 Medium"
-                elif '## Hard' in line:
-                    return "🔴 Hard"
+            # Read the entire file content because the HTML might be all on one line
+            content = f.read()
+            
+            # Check for HTML tags first (what your extension uses)
+            # We also check for Markdown just in case older problems use it
+            if '<h3>Easy</h3>' in content or '## Easy' in content:
+                return "🟢 Easy"
+            elif '<h3>Medium</h3>' in content or '## Medium' in content:
+                return "🟠 Medium"
+            elif '<h3>Hard</h3>' in content or '## Hard' in content:
+                return "🔴 Hard"
     except Exception:
         # If there's any error reading the file, safely pass to the default return below
         pass
@@ -66,7 +69,7 @@ def main():
         link = f"./{d}"
         
         # 🕵️‍♂️ DYNAMICALLY FETCH DIFFICULTY!
-        # The script will literally peek inside the problem's folder to read the difficulty.
+        # The script looks for <h3>Medium</h3> inside the folder's README.
         difficulty = get_difficulty_from_readme(d)
 
         # Add the row to our single table
