@@ -53,4 +53,8 @@ Here is a list of the problems currently solved in this repository:
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/jgarvey928/LeetCode/tree/main/0002-add-two-numbers/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0006-zigzag-conversion](https://github.com/jgarvey928/LeetCode/tree/main/0006-zigzag-conversion/) | Medium |
 <!---LeetCode Topics End-->
