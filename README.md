@@ -18,6 +18,7 @@ Here is a list of the problems currently solved in this repository:
 | # | Problem Name | Difficulty | Link to Solution |
 |---|---|:---:|---|
 | 0002 | Add Two Numbers | 🟠 Medium | [View](./0002-add-two-numbers) |
+| 0004 | Median Of Two Sorted Arrays | 🔴 Hard | [View](./0004-median-of-two-sorted-arrays) |
 | 0006 | Zigzag Conversion | 🟠 Medium | [View](./0006-zigzag-conversion) |
 | 0007 | Reverse Integer | 🟠 Medium | [View](./0007-reverse-integer) |
 | 0009 | Palindrome Number | 🟢 Easy | [View](./0009-palindrome-number) |
