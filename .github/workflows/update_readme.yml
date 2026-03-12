@@ -21,7 +21,7 @@ jobs:
 
       # 1. Wait 15 seconds to let the LeetCode extension finish its automatic commits
       - name: Wait for extension to finish
-        run: sleep 10
+        run: sleep 20
 
       # 2. Pull the latest code (which will include the extension's messy README)
       - name: Sync latest changes
