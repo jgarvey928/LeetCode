@@ -5,6 +5,7 @@ on:
     branches:
       - main
 
+# This cancels any overlapping runs to keep things lightning fast
 concurrency:
   group: readme-update
   cancel-in-progress: true
@@ -23,12 +24,22 @@ jobs:
         with:
           python-version: '3.x'
 
-      # Bumped to 30 seconds to make absolutely sure the extension finishes its second commit
-      - name: Wait for extension to finish
-        run: sleep 30
-
-      - name: Sync latest changes
-        run: git pull origin main --rebase
+      # THE SMART WAIT: Polls every 2 seconds instead of waiting a flat 30 seconds!
+      - name: Smart Wait for Topics
+        run: |
+          echo "Checking for LeetCode topics..."
+          for i in {1..10}; do
+            git pull origin main --rebase
+            
+            # Check if the extension has dropped the "## " topics into our invisible tags
+            if awk '//,//' README.md | grep -q "## "; then
+              echo "Topics detected! Firing Python script instantly!"
+              break
+            fi
+            
+            echo "Topics not here yet, waiting 2 seconds..."
+            sleep 2
+          done
 
       - name: Run script to completely overwrite README
         run: python generate_readme.py
