@@ -1,7 +1,7 @@
 import os
 import re
 
-# This is the template for your README. The {table_content} part will be replaced by the script.
+# The updated template without the bottom sections and with the new column
 README_TEMPLATE = """# 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
@@ -14,12 +14,9 @@ Each problem has its own dedicated directory, named in the format `XXXX-problem-
 
 Here is a list of the problems currently solved in this repository:
 
-| # | Problem Name | Link to Solution |
-|---|---|---|
+| # | Problem Name | Problem Type | Link to Solution |
+|---|---|---|---|
 {table_content}
-
----
-*Happy Coding! 💻*
 """
 
 def main():
@@ -39,9 +36,12 @@ def main():
         name = ' '.join(word.capitalize() for word in name_parts)
         
         link = f"./{d}"
+        
+        # Placeholder for Problem Type since we can't guess it from the folder name
+        problem_type = "TBD"
 
-        # Add the row to our table
-        table_rows.append(f"| {num} | {name} | [View]({link}) |")
+        # Add the row to our table with the new column
+        table_rows.append(f"| {num} | {name} | {problem_type} | [View]({link}) |")
 
     # Combine all rows
     table_content = '\n'.join(table_rows)
