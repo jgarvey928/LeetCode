@@ -36,3 +36,19 @@ Here is a list of the problems currently solved in this repository:
 | 1791 | Find Center Of Star Graph | 🟢 Easy | [View](./1791-find-center-of-star-graph) |
 | 1916 | Find Center Of Star Graph | 🟢 Easy | [View](./1916-find-center-of-star-graph) |
 | 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) |
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/jgarvey928/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/jgarvey928/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/jgarvey928/LeetCode/tree/main/0004-median-of-two-sorted-arrays/) | Hard |
+<!---LeetCode Topics End-->
