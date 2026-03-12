@@ -38,23 +38,3 @@ Here is a list of the problems currently solved in this repository:
 | 1791 | Find Center Of Star Graph | 🟢 Easy | [View](./1791-find-center-of-star-graph) | N/A |
 | 1916 | Find Center Of Star Graph | 🟢 Easy | [View](./1916-find-center-of-star-graph) | N/A |
 | 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) | N/A |
-
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0002-add-two-numbers](https://github.com/jgarvey928/LeetCode/tree/main/0002-add-two-numbers/) | Medium |
-## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0002-add-two-numbers](https://github.com/jgarvey928/LeetCode/tree/main/0002-add-two-numbers/) | Medium |
-## Recursion
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0002-add-two-numbers](https://github.com/jgarvey928/LeetCode/tree/main/0002-add-two-numbers/) | Medium |
-## String
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0006-zigzag-conversion](https://github.com/jgarvey928/LeetCode/tree/main/0006-zigzag-conversion/) | Medium |
-<!---LeetCode Topics End-->
