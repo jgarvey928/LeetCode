@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+# This stops the bot from running twice at the exact same time
+concurrency:
+  group: readme-update
+  cancel-in-progress: true
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
@@ -19,20 +24,16 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 1. Wait 15 seconds to let the LeetCode extension finish ALL its back-to-back saves
+      # Wait to make sure the extension is completely finished saving
       - name: Wait for extension to finish
         run: sleep 15
 
-      # 2. Pull the absolute latest code with the extension's topics included
       - name: Sync latest changes
-        run: |
-          git pull origin main --rebase
+        run: git pull origin main --rebase
 
-      # 3. NOW run our script
       - name: Run script to completely overwrite README
         run: python generate_readme.py
 
-      # 4. Save and forcefully push the clean README back to GitHub
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
