@@ -15,29 +15,29 @@ Each problem has its own dedicated directory, named in the format `XXXX-problem-
 
 Here is a list of the problems currently solved in this repository:
 
-| # | Problem Name | Difficulty | Language | Link to Solution | Topics |
+| # | Problem Name | Difficulty | Language | Topics | Link to Solution |
 |---|---|:---:|---|---|---|
-| 0001 | Two Sum | 🟢 Easy | Python | [View](./0001-two-sum) | N/A |
-| 0002 | Add Two Numbers | 🟠 Medium | Java, Python | [View](./0002-add-two-numbers) | N/A |
-| 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | Python | [View](./0003-longest-substring-without-repeating-characters) | N/A |
-| 0004 | Median Of Two Sorted Arrays | 🔴 Hard | Python | [View](./0004-median-of-two-sorted-arrays) | N/A |
-| 0006 | Zigzag Conversion | 🟠 Medium | Python | [View](./0006-zigzag-conversion) | N/A |
-| 0007 | Reverse Integer | 🟠 Medium | Python | [View](./0007-reverse-integer) | N/A |
-| 0009 | Palindrome Number | 🟢 Easy | Java | [View](./0009-palindrome-number) | N/A |
-| 0013 | Roman To Integer | 🟢 Easy | Java, Python | [View](./0013-roman-to-integer) | Hash Table, Math, String |
-| 0014 | Longest Common Prefix | 🟢 Easy | Java | [View](./0014-longest-common-prefix) | N/A |
-| 0021 | Merge Two Sorted Lists | 🟢 Easy | Java | [View](./0021-merge-two-sorted-lists) | N/A |
-| 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | Java | [View](./0026-remove-duplicates-from-sorted-array) | N/A |
-| 0027 | Remove Element | 🟢 Easy | Python | [View](./0027-remove-element) | N/A |
-| 0080 | Remove Duplicates From Sorted Array Ii | 🟠 Medium | Java | [View](./0080-remove-duplicates-from-sorted-array-ii) | N/A |
-| 0088 | Merge Sorted Array | 🟢 Easy | Python | [View](./0088-merge-sorted-array) | N/A |
-| 0121 | Best Time To Buy And Sell Stock | 🟢 Easy | Java | [View](./0121-best-time-to-buy-and-sell-stock) | N/A |
-| 0169 | Majority Element | 🟢 Easy | Python | [View](./0169-majority-element) | N/A |
-| 0595 | Big Countries | 🟢 Easy | SQL | [View](./0595-big-countries) | Database |
-| 1603 | Running Sum Of 1d Array | 🟢 Easy | Java | [View](./1603-running-sum-of-1d-array) | N/A |
-| 1791 | Find Center Of Star Graph | 🟢 Easy | Java | [View](./1791-find-center-of-star-graph) | N/A |
-| 1916 | Find Center Of Star Graph | 🟢 Easy | Java | [View](./1916-find-center-of-star-graph) | N/A |
-| 2383 | Add Two Integers | 🟢 Easy | C++, Java | [View](./2383-add-two-integers) | N/A |
+| 0001 | Two Sum | 🟢 Easy | Python | N/A | [View](./0001-two-sum) |
+| 0002 | Add Two Numbers | 🟠 Medium | Java, Python | N/A | [View](./0002-add-two-numbers) |
+| 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | Python | N/A | [View](./0003-longest-substring-without-repeating-characters) |
+| 0004 | Median Of Two Sorted Arrays | 🔴 Hard | Python | N/A | [View](./0004-median-of-two-sorted-arrays) |
+| 0006 | Zigzag Conversion | 🟠 Medium | Python | N/A | [View](./0006-zigzag-conversion) |
+| 0007 | Reverse Integer | 🟠 Medium | Python | N/A | [View](./0007-reverse-integer) |
+| 0009 | Palindrome Number | 🟢 Easy | Java | N/A | [View](./0009-palindrome-number) |
+| 0013 | Roman To Integer | 🟢 Easy | Java, Python | Hash Table, Math, String | [View](./0013-roman-to-integer) |
+| 0014 | Longest Common Prefix | 🟢 Easy | Java | N/A | [View](./0014-longest-common-prefix) |
+| 0021 | Merge Two Sorted Lists | 🟢 Easy | Java | N/A | [View](./0021-merge-two-sorted-lists) |
+| 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | Java | N/A | [View](./0026-remove-duplicates-from-sorted-array) |
+| 0027 | Remove Element | 🟢 Easy | Python | N/A | [View](./0027-remove-element) |
+| 0080 | Remove Duplicates From Sorted Array Ii | 🟠 Medium | Java | N/A | [View](./0080-remove-duplicates-from-sorted-array-ii) |
+| 0088 | Merge Sorted Array | 🟢 Easy | Python | N/A | [View](./0088-merge-sorted-array) |
+| 0121 | Best Time To Buy And Sell Stock | 🟢 Easy | Java | N/A | [View](./0121-best-time-to-buy-and-sell-stock) |
+| 0169 | Majority Element | 🟢 Easy | Python | N/A | [View](./0169-majority-element) |
+| 0595 | Big Countries | 🟢 Easy | SQL | Database | [View](./0595-big-countries) |
+| 1603 | Running Sum Of 1d Array | 🟢 Easy | Java | N/A | [View](./1603-running-sum-of-1d-array) |
+| 1791 | Find Center Of Star Graph | 🟢 Easy | Java | N/A | [View](./1791-find-center-of-star-graph) |
+| 1916 | Find Center Of Star Graph | 🟢 Easy | Java | N/A | [View](./1916-find-center-of-star-graph) |
+| 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
 <!---LeetCode Topics End-->
