@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '[0-9][0-9][0-9][0-9]-**/*'
+    # I removed the 'paths' rule here! Now it runs on EVERY push.
 
 jobs:
   update-readme:
@@ -13,33 +12,25 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-      # 1. Wait 15 seconds to let the LeetCode extension finish making its mess
-      - name: Wait for extension to finish
-        run: sleep 15
-
-      # 2. Download the exact state of the repo (including the extension's bad README)
-      - name: Sync latest changes
-        run: |
-          git fetch origin main
-          git reset --hard origin/main
-
-      # 3. Run our script, which will completely overwrite the bad README with our clean one
-      - name: Run script to update README
+      - name: Run script to completely overwrite README
         run: python generate_readme.py
 
-      # 4. Save and forcefully push the clean README back to GitHub
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           
-          git diff --quiet && git diff --staged --quiet || git commit -m "docs: auto-update README table and clean up extension mess"
+          # If the python script changed the README, save it and force push it!
+          git diff --quiet && git diff --staged --quiet || git commit -m "docs: auto-update README table and clean up extension"
           
+          git pull origin main --rebase
           git push origin main
