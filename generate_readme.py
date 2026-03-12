@@ -5,7 +5,26 @@ import re
 TOPIC_START = "<" + "!---LeetCode Topics Start-->"
 TOPIC_END = "<" + "!---LeetCode Topics End-->"
 
-# Notice the {TOPIC_START} at the bottom. This safely injects the tags.
+# Dictionary mapping file extensions to Language names
+EXTENSION_MAP = {
+    '.py': 'Python',
+    '.java': 'Java',
+    '.sql': 'SQL',
+    '.js': 'JavaScript',
+    '.ts': 'TypeScript',
+    '.c': 'C',
+    '.cpp': 'C++',
+    '.cs': 'C#',
+    '.go': 'Go',
+    '.rb': 'Ruby',
+    '.swift': 'Swift',
+    '.kt': 'Kotlin',
+    '.rs': 'Rust',
+    '.php': 'PHP',
+    '.sh': 'Shell'
+}
+
+# Added the Language column to the table template
 README_TEMPLATE = f"""# 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
@@ -23,8 +42,8 @@ Each problem has its own dedicated directory, named in the format `XXXX-problem-
 
 Here is a list of the problems currently solved in this repository:
 
-| # | Problem Name | Difficulty | Link to Solution | Topics |
-|---|---|:---:|---|---|
+| # | Problem Name | Difficulty | Language | Link to Solution | Topics |
+|---|---|:---:|---|---|---|
 {{table_content}}
 
 {TOPIC_START}
@@ -44,9 +63,9 @@ def get_existing_topics():
     for line in content.split('\n'):
         if line.startswith('|') and '[View]' in line:
             parts = line.split('|')
-            if len(parts) >= 6:
+            if len(parts) >= 7: # We have 7 columns now including the pipes
                 num = parts[1].strip()
-                topics = parts[5].strip()
+                topics = parts[6].strip() # Topics is now the 6th data column
                 if topics and topics != "N/A":
                     topic_map[num] = [t.strip() for t in topics.split(',')]
 
@@ -89,6 +108,26 @@ def get_difficulty_from_readme(folder_path):
         pass
     return "⚪ TBD"
 
+def get_languages_from_folder(folder_path):
+    """Scans the folder for code files and returns a string of the languages used."""
+    languages = set()
+    try:
+        for file in os.listdir(folder_path):
+            # Get the file extension (e.g., '.py')
+            ext = os.path.splitext(file)[1].lower()
+            
+            # If the extension is in our dictionary, add the language to our set
+            if ext in EXTENSION_MAP:
+                languages.add(EXTENSION_MAP[ext])
+    except Exception:
+        pass
+        
+    if not languages:
+        return "N/A"
+        
+    # Sort them alphabetically so it looks clean (e.g., "Java, Python")
+    return ", ".join(sorted(list(languages)))
+
 def main():
     topic_map = get_existing_topics()
 
@@ -106,16 +145,19 @@ def main():
         link = f"./{d}"
         difficulty = get_difficulty_from_readme(d)
         
+        # 🕵️‍♂️ Detect languages used in this problem folder
+        languages_list = get_languages_from_folder(d)
+        
         if num in topic_map and topic_map[num]:
             topics_list = ", ".join(topic_map[num])
         else:
             topics_list = "N/A"
 
-        table_rows.append(f"| {num} | {name} | {difficulty} | [View]({link}) | {topics_list} |")
+        # Insert the Language column right before the Link column
+        table_rows.append(f"| {num} | {name} | {difficulty} | {languages_list} | [View]({link}) | {topics_list} |")
 
     table_content = '\n'.join(table_rows)
     
-    # We use .format() to inject the rows into the {{table_content}} placeholder safely
     readme_content = README_TEMPLATE.format(table_content=table_content)
 
     with open('README.md', 'w', encoding='utf-8') as f:
