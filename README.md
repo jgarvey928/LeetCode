@@ -17,7 +17,7 @@ Here is a list of the problems currently solved in this repository:
 
 | # | Problem Name | Difficulty | Link to Solution | Topics |
 |---|---|:---:|---|---|
-| 0001 | Two Sum | 🟢 Easy | [View](./0001-two-sum) | N/A |
+| 0001 | Two Sum | 🟢 Easy | [View](./0001-two-sum) | Array, Hash Table |
 | 0002 | Add Two Numbers | 🟠 Medium | [View](./0002-add-two-numbers) | N/A |
 | 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | [View](./0003-longest-substring-without-repeating-characters) | N/A |
 | 0004 | Median Of Two Sorted Arrays | 🔴 Hard | [View](./0004-median-of-two-sorted-arrays) | N/A |
@@ -39,15 +39,5 @@ Here is a list of the problems currently solved in this repository:
 | 1916 | Find Center Of Star Graph | 🟢 Easy | [View](./1916-find-center-of-star-graph) | N/A |
 | 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) | N/A |
 
-
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0001-two-sum](https://github.com/jgarvey928/LeetCode/tree/main/0001-two-sum/) | Easy |
-## Hash Table
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0001-two-sum](https://github.com/jgarvey928/LeetCode/tree/main/0001-two-sum/) | Easy |
 <!---LeetCode Topics End-->
