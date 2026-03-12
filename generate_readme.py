@@ -1,6 +1,7 @@
 import os
 import re
 
+# We put the invisible tags at the very bottom so the extension has a place to drop data!
 README_TEMPLATE = """# 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
@@ -21,6 +22,7 @@ Here is a list of the problems currently solved in this repository:
 | # | Problem Name | Difficulty | Link to Solution | Topics |
 |---|---|:---:|---|---|
 {table_content}
+
 """
 
 def get_existing_topics():
