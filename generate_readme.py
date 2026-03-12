@@ -1,7 +1,12 @@
 import os
 import re
 
-README_TEMPLATE = """# 🚀 LeetCode Solutions
+# We break these tags apart mathematically so browsers CANNOT hide them when you copy-paste!
+TOPIC_START = "<" + "!---LeetCode Topics Start-->"
+TOPIC_END = "<" + "!---LeetCode Topics End-->"
+
+# Notice the {TOPIC_START} at the bottom. This safely injects the tags.
+README_TEMPLATE = f"""# 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
 
@@ -20,8 +25,10 @@ Here is a list of the problems currently solved in this repository:
 
 | # | Problem Name | Difficulty | Link to Solution | Topics |
 |---|---|:---:|---|---|
-{table_content}
+{{table_content}}
 
+{TOPIC_START}
+{TOPIC_END}
 """
 
 def get_existing_topics():
@@ -43,25 +50,21 @@ def get_existing_topics():
                 if topics and topics != "N/A":
                     topic_map[num] = [t.strip() for t in topics.split(',')]
 
-    # 2. PARSE NEW TOPICS FROM THE EXTENSION'S FOOTER (Line-by-line method)
-    if '' in content and '' in content:
-        block = content.split('')[1].split('')[0]
+    # 2. PARSE NEW TOPICS FROM THE EXTENSION'S FOOTER
+    if TOPIC_START in content and TOPIC_END in content:
+        block = content.split(TOPIC_START)[1].split(TOPIC_END)[0]
         
         current_topic = ""
         for line in block.split('\n'):
             line = line.strip()
             
-            # If the line is a header like "## Array"
             if line.startswith('## '):
-                # Remove the "## " to just get "Array"
                 current_topic = line.replace('##', '').strip()
                 
-            # If the line is a table row containing a problem link
             elif current_topic and line.startswith('|') and '[' in line:
-                # Look for the 4-digit number, e.g., [0001-two-sum]
                 match = re.search(r'\[(\d{4})-', line)
                 if match:
-                    pid = match.group(1) # Extracts "0001"
+                    pid = match.group(1)
                     if pid not in topic_map:
                         topic_map[pid] = []
                     if current_topic not in topic_map[pid]:
@@ -70,7 +73,6 @@ def get_existing_topics():
     return topic_map
 
 def get_difficulty_from_readme(folder_path):
-    """Opens the README.md inside the problem folder and extracts the difficulty."""
     readme_path = os.path.join(folder_path, 'README.md')
     if not os.path.exists(readme_path):
         return "⚪ TBD"
@@ -88,10 +90,8 @@ def get_difficulty_from_readme(folder_path):
     return "⚪ TBD"
 
 def main():
-    # 1. Grab all topics before we overwrite the file
     topic_map = get_existing_topics()
 
-    # 2. Find all problem directories
     dirs = [d for d in os.listdir('.') if os.path.isdir(d) and re.match(r'^\d{4}-', d)]
     dirs.sort()
 
@@ -106,7 +106,6 @@ def main():
         link = f"./{d}"
         difficulty = get_difficulty_from_readme(d)
         
-        # 3. Get the topics we safely recorded. Join them, or use N/A if missing.
         if num in topic_map and topic_map[num]:
             topics_list = ", ".join(topic_map[num])
         else:
@@ -115,9 +114,10 @@ def main():
         table_rows.append(f"| {num} | {name} | {difficulty} | [View]({link}) | {topics_list} |")
 
     table_content = '\n'.join(table_rows)
+    
+    # We use .format() to inject the rows into the {{table_content}} placeholder safely
     readme_content = README_TEMPLATE.format(table_content=table_content)
 
-    # Overwrite the main README.md entirely
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(readme_content)
 
