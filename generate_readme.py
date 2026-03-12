@@ -24,7 +24,7 @@ EXTENSION_MAP = {
     '.sh': 'Shell'
 }
 
-# Added the Language column to the table template
+# Link to Solution is now the very last column
 README_TEMPLATE = f"""# 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
@@ -42,7 +42,7 @@ Each problem has its own dedicated directory, named in the format `XXXX-problem-
 
 Here is a list of the problems currently solved in this repository:
 
-| # | Problem Name | Difficulty | Language | Link to Solution | Topics |
+| # | Problem Name | Difficulty | Language | Topics | Link to Solution |
 |---|---|:---:|---|---|---|
 {{table_content}}
 
@@ -63,9 +63,14 @@ def get_existing_topics():
     for line in content.split('\n'):
         if line.startswith('|') and '[View]' in line:
             parts = line.split('|')
-            if len(parts) >= 7: # We have 7 columns now including the pipes
+            if len(parts) >= 7:
                 num = parts[1].strip()
-                topics = parts[6].strip() # Topics is now the 6th data column
+                # Smart check: smoothly handles the transition from the old column order to the new one
+                if '[View]' in parts[5]:
+                    topics = parts[6].strip() # Old format
+                else:
+                    topics = parts[5].strip() # New format
+                    
                 if topics and topics != "N/A":
                     topic_map[num] = [t.strip() for t in topics.split(',')]
 
@@ -113,10 +118,7 @@ def get_languages_from_folder(folder_path):
     languages = set()
     try:
         for file in os.listdir(folder_path):
-            # Get the file extension (e.g., '.py')
             ext = os.path.splitext(file)[1].lower()
-            
-            # If the extension is in our dictionary, add the language to our set
             if ext in EXTENSION_MAP:
                 languages.add(EXTENSION_MAP[ext])
     except Exception:
@@ -125,7 +127,6 @@ def get_languages_from_folder(folder_path):
     if not languages:
         return "N/A"
         
-    # Sort them alphabetically so it looks clean (e.g., "Java, Python")
     return ", ".join(sorted(list(languages)))
 
 def main():
@@ -144,8 +145,6 @@ def main():
         
         link = f"./{d}"
         difficulty = get_difficulty_from_readme(d)
-        
-        # 🕵️‍♂️ Detect languages used in this problem folder
         languages_list = get_languages_from_folder(d)
         
         if num in topic_map and topic_map[num]:
@@ -153,8 +152,8 @@ def main():
         else:
             topics_list = "N/A"
 
-        # Insert the Language column right before the Link column
-        table_rows.append(f"| {num} | {name} | {difficulty} | {languages_list} | [View]({link}) | {topics_list} |")
+        # Moved the Link to the very end of the row
+        table_rows.append(f"| {num} | {name} | {difficulty} | {languages_list} | {topics_list} | [View]({link}) |")
 
     table_content = '\n'.join(table_rows)
     
