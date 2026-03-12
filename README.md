@@ -17,21 +17,21 @@ Here is a list of the problems currently solved in this repository:
 
 | # | Problem Name | Difficulty | Link to Solution |
 |---|---|:---:|---|
-| 0002 | Add Two Numbers | 🟠 Medium | [View](./0002-add-two-numbers) |
-| 0006 | Zigzag Conversion | 🟠 Medium | [View](./0006-zigzag-conversion) |
-| 0007 | Reverse Integer | 🟠 Medium | [View](./0007-reverse-integer) |
-| 0009 | Palindrome Number | 🟢 Easy | [View](./0009-palindrome-number) |
-| 0013 | Roman To Integer | 🟢 Easy | [View](./0013-roman-to-integer) |
-| 0014 | Longest Common Prefix | 🟢 Easy | [View](./0014-longest-common-prefix) |
-| 0021 | Merge Two Sorted Lists | 🟢 Easy | [View](./0021-merge-two-sorted-lists) |
-| 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | [View](./0026-remove-duplicates-from-sorted-array) |
-| 0027 | Remove Element | 🟢 Easy | [View](./0027-remove-element) |
-| 0080 | Remove Duplicates From Sorted Array Ii | 🟠 Medium | [View](./0080-remove-duplicates-from-sorted-array-ii) |
-| 0088 | Merge Sorted Array | 🟢 Easy | [View](./0088-merge-sorted-array) |
-| 0121 | Best Time To Buy And Sell Stock | 🟢 Easy | [View](./0121-best-time-to-buy-and-sell-stock) |
-| 0169 | Majority Element | 🟢 Easy | [View](./0169-majority-element) |
-| 0595 | Big Countries | 🟢 Easy | [View](./0595-big-countries) |
-| 1603 | Running Sum Of 1d Array | 🟢 Easy | [View](./1603-running-sum-of-1d-array) |
-| 1791 | Find Center Of Star Graph | 🟢 Easy | [View](./1791-find-center-of-star-graph) |
-| 1916 | Find Center Of Star Graph | 🔴 Hard | [View](./1916-find-center-of-star-graph) |
-| 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) |
+| 0002 | Add Two Numbers | ⚪ TBD | [View](./0002-add-two-numbers) |
+| 0006 | Zigzag Conversion | ⚪ TBD | [View](./0006-zigzag-conversion) |
+| 0007 | Reverse Integer | ⚪ TBD | [View](./0007-reverse-integer) |
+| 0009 | Palindrome Number | ⚪ TBD | [View](./0009-palindrome-number) |
+| 0013 | Roman To Integer | ⚪ TBD | [View](./0013-roman-to-integer) |
+| 0014 | Longest Common Prefix | ⚪ TBD | [View](./0014-longest-common-prefix) |
+| 0021 | Merge Two Sorted Lists | ⚪ TBD | [View](./0021-merge-two-sorted-lists) |
+| 0026 | Remove Duplicates From Sorted Array | ⚪ TBD | [View](./0026-remove-duplicates-from-sorted-array) |
+| 0027 | Remove Element | ⚪ TBD | [View](./0027-remove-element) |
+| 0080 | Remove Duplicates From Sorted Array Ii | ⚪ TBD | [View](./0080-remove-duplicates-from-sorted-array-ii) |
+| 0088 | Merge Sorted Array | ⚪ TBD | [View](./0088-merge-sorted-array) |
+| 0121 | Best Time To Buy And Sell Stock | ⚪ TBD | [View](./0121-best-time-to-buy-and-sell-stock) |
+| 0169 | Majority Element | ⚪ TBD | [View](./0169-majority-element) |
+| 0595 | Big Countries | ⚪ TBD | [View](./0595-big-countries) |
+| 1603 | Running Sum Of 1d Array | ⚪ TBD | [View](./1603-running-sum-of-1d-array) |
+| 1791 | Find Center Of Star Graph | ⚪ TBD | [View](./1791-find-center-of-star-graph) |
+| 1916 | Find Center Of Star Graph | ⚪ TBD | [View](./1916-find-center-of-star-graph) |
+| 2383 | Add Two Integers | ⚪ TBD | [View](./2383-add-two-integers) |
