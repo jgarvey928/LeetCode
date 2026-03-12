@@ -40,4 +40,9 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | [View](./2383-add-two-integers) | N/A |
 
 <!---LeetCode Topics Start-->
+# LeetCode Topics
+## Database
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0595-big-countries](https://github.com/jgarvey928/LeetCode/tree/main/0595-big-countries/) | Easy |
 <!---LeetCode Topics End-->
