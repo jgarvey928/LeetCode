@@ -22,7 +22,7 @@ Here is a list of the problems currently solved in this repository:
 | 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | Python | N/A | [View](./0003-longest-substring-without-repeating-characters) |
 | 0004 | Median Of Two Sorted Arrays | 🔴 Hard | Python | Array, Binary Search, Divide and Conquer | [View](./0004-median-of-two-sorted-arrays) |
 | 0006 | Zigzag Conversion | 🟠 Medium | Python | N/A | [View](./0006-zigzag-conversion) |
-| 0007 | Reverse Integer | 🟠 Medium | Python | N/A | [View](./0007-reverse-integer) |
+| 0007 | Reverse Integer | 🟠 Medium | Python | Math | [View](./0007-reverse-integer) |
 | 0009 | Palindrome Number | 🟢 Easy | Java | N/A | [View](./0009-palindrome-number) |
 | 0013 | Roman To Integer | 🟢 Easy | Java, Python | Hash Table, Math, String | [View](./0013-roman-to-integer) |
 | 0014 | Longest Common Prefix | 🟢 Easy | Java | N/A | [View](./0014-longest-common-prefix) |
@@ -40,9 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0007-reverse-integer](https://github.com/jgarvey928/LeetCode/tree/main/0007-reverse-integer/) | Medium |
 <!---LeetCode Topics End-->
