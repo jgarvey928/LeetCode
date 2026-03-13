@@ -26,7 +26,7 @@ Here is a list of the problems currently solved in this repository:
 | 0009 | Palindrome Number | 🟢 Easy | Java | Math | [View](./0009-palindrome-number) |
 | 0013 | Roman To Integer | 🟢 Easy | Java, Python | Hash Table, Math, String | [View](./0013-roman-to-integer) |
 | 0014 | Longest Common Prefix | 🟢 Easy | Java | Array, String, Trie | [View](./0014-longest-common-prefix) |
-| 0021 | Merge Two Sorted Lists | 🟢 Easy | Java | N/A | [View](./0021-merge-two-sorted-lists) |
+| 0021 | Merge Two Sorted Lists | 🟢 Easy | Java | Linked List, Recursion | [View](./0021-merge-two-sorted-lists) |
 | 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | Java | N/A | [View](./0026-remove-duplicates-from-sorted-array) |
 | 0027 | Remove Element | 🟢 Easy | Python | N/A | [View](./0027-remove-element) |
 | 0080 | Remove Duplicates From Sorted Array Ii | 🟠 Medium | Java | N/A | [View](./0080-remove-duplicates-from-sorted-array-ii) |
@@ -40,13 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Linked List
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0021-merge-two-sorted-lists](https://github.com/jgarvey928/LeetCode/tree/main/0021-merge-two-sorted-lists/) | Easy |
-## Recursion
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0021-merge-two-sorted-lists](https://github.com/jgarvey928/LeetCode/tree/main/0021-merge-two-sorted-lists/) | Easy |
 <!---LeetCode Topics End-->
