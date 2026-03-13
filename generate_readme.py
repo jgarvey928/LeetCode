@@ -25,13 +25,7 @@ EXTENSION_MAP = {
 }
 
 # Link to Solution is now the very last column
-README_TEMPLATE = f"""<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=006400&center=true&vCenter=true&width=435&lines=🚀+LeetCode+Journey+2024;Solving+one+problem+at+a+time...;Mastering+Algorithms+%26+Data+Structures;Language+of+choice:+Java" alt="Typing SVG" />
-</p>
-
-<p align="center">
-  <img src="https://leetcode-stats-six.vercel.app/?username=jgarvey928&theme=dark" alt="LeetCode Stats" />
-</p>
+README_TEMPLATE = f"""
 # 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
