@@ -42,4 +42,9 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
+# LeetCode Topics
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1791-find-center-of-star-graph](https://github.com/jgarvey928/LeetCode/tree/main/1791-find-center-of-star-graph/) | Easy |
 <!---LeetCode Topics End-->
