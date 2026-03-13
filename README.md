@@ -36,15 +36,10 @@ Here is a list of the problems currently solved in this repository:
 | 0595 | Big Countries | 🟢 Easy | SQL | Database | [View](./0595-big-countries) |
 | 1480 | Running Sum Of 1d Array | 🟢 Easy | Java | Array, Prefix Sum | [View](./1480-running-sum-of-1d-array) |
 | 1603 | Running Sum Of 1d Array | 🟢 Easy | Java | N/A | [View](./1603-running-sum-of-1d-array) |
-| 1791 | Find Center Of Star Graph | 🟢 Easy | Java | N/A | [View](./1791-find-center-of-star-graph) |
+| 1791 | Find Center Of Star Graph | 🟢 Easy | Java | Graph Theory | [View](./1791-find-center-of-star-graph) |
 | 1916 | Find Center Of Star Graph | 🟢 Easy | Java | N/A | [View](./1916-find-center-of-star-graph) |
 | 2235 | Add Two Integers | 🟢 Easy | C++ | Math | [View](./2235-add-two-integers) |
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Graph Theory
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1791-find-center-of-star-graph](https://github.com/jgarvey928/LeetCode/tree/main/1791-find-center-of-star-graph/) | Easy |
 <!---LeetCode Topics End-->
