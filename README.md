@@ -30,7 +30,7 @@ Here is a list of the problems currently solved in this repository:
 | 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | Java | Array, Two Pointers | [View](./0026-remove-duplicates-from-sorted-array) |
 | 0027 | Remove Element | 🟢 Easy | Java, Python | Array, Two Pointers | [View](./0027-remove-element) |
 | 0080 | Remove Duplicates From Sorted Array Ii | 🟠 Medium | Java, Python | Array, Two Pointers | [View](./0080-remove-duplicates-from-sorted-array-ii) |
-| 0088 | Merge Sorted Array | 🟢 Easy | Python | N/A | [View](./0088-merge-sorted-array) |
+| 0088 | Merge Sorted Array | 🟢 Easy | Python | Array, Two Pointers, Sorting | [View](./0088-merge-sorted-array) |
 | 0121 | Best Time To Buy And Sell Stock | 🟢 Easy | Java | N/A | [View](./0121-best-time-to-buy-and-sell-stock) |
 | 0169 | Majority Element | 🟢 Easy | Python | N/A | [View](./0169-majority-element) |
 | 0595 | Big Countries | 🟢 Easy | SQL | Database | [View](./0595-big-countries) |
@@ -40,17 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0088-merge-sorted-array](https://github.com/jgarvey928/LeetCode/tree/main/0088-merge-sorted-array/) | Easy |
-## Two Pointers
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0088-merge-sorted-array](https://github.com/jgarvey928/LeetCode/tree/main/0088-merge-sorted-array/) | Easy |
-## Sorting
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0088-merge-sorted-array](https://github.com/jgarvey928/LeetCode/tree/main/0088-merge-sorted-array/) | Easy |
 <!---LeetCode Topics End-->
