@@ -25,7 +25,7 @@ Here is a list of the problems currently solved in this repository:
 | 0007 | Reverse Integer | 🟠 Medium | Python | Math | [View](./0007-reverse-integer) |
 | 0009 | Palindrome Number | 🟢 Easy | Java | N/A | [View](./0009-palindrome-number) |
 | 0013 | Roman To Integer | 🟢 Easy | Java, Python | Hash Table, Math, String | [View](./0013-roman-to-integer) |
-| 0014 | Longest Common Prefix | 🟢 Easy | Java | N/A | [View](./0014-longest-common-prefix) |
+| 0014 | Longest Common Prefix | 🟢 Easy | Java | Array, String, Trie | [View](./0014-longest-common-prefix) |
 | 0021 | Merge Two Sorted Lists | 🟢 Easy | Java | N/A | [View](./0021-merge-two-sorted-lists) |
 | 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | Java | N/A | [View](./0026-remove-duplicates-from-sorted-array) |
 | 0027 | Remove Element | 🟢 Easy | Python | N/A | [View](./0027-remove-element) |
@@ -40,17 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0014-longest-common-prefix](https://github.com/jgarvey928/LeetCode/tree/main/0014-longest-common-prefix/) | Easy |
-## String
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0014-longest-common-prefix](https://github.com/jgarvey928/LeetCode/tree/main/0014-longest-common-prefix/) | Easy |
-## Trie
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0014-longest-common-prefix](https://github.com/jgarvey928/LeetCode/tree/main/0014-longest-common-prefix/) | Easy |
 <!---LeetCode Topics End-->
