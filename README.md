@@ -28,7 +28,7 @@ Here is a list of the problems currently solved in this repository:
 | 0014 | Longest Common Prefix | 🟢 Easy | Java | Array, String, Trie | [View](./0014-longest-common-prefix) |
 | 0021 | Merge Two Sorted Lists | 🟢 Easy | Java | Linked List, Recursion | [View](./0021-merge-two-sorted-lists) |
 | 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | Java | N/A | [View](./0026-remove-duplicates-from-sorted-array) |
-| 0027 | Remove Element | 🟢 Easy | Python | N/A | [View](./0027-remove-element) |
+| 0027 | Remove Element | 🟢 Easy | Java, Python | Array, Two Pointers | [View](./0027-remove-element) |
 | 0080 | Remove Duplicates From Sorted Array Ii | 🟠 Medium | Java, Python | Array, Two Pointers | [View](./0080-remove-duplicates-from-sorted-array-ii) |
 | 0088 | Merge Sorted Array | 🟢 Easy | Python | N/A | [View](./0088-merge-sorted-array) |
 | 0121 | Best Time To Buy And Sell Stock | 🟢 Easy | Java | N/A | [View](./0121-best-time-to-buy-and-sell-stock) |
@@ -40,13 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0027-remove-element](https://github.com/jgarvey928/LeetCode/tree/main/0027-remove-element/) | Easy |
-## Two Pointers
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0027-remove-element](https://github.com/jgarvey928/LeetCode/tree/main/0027-remove-element/) | Easy |
 <!---LeetCode Topics End-->
