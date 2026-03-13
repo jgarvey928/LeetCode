@@ -40,17 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Hash Table
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0013-roman-to-integer](https://github.com/jgarvey928/LeetCode/tree/main/0013-roman-to-integer/) | Easy |
-## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0013-roman-to-integer](https://github.com/jgarvey928/LeetCode/tree/main/0013-roman-to-integer/) | Easy |
-## String
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0013-roman-to-integer](https://github.com/jgarvey928/LeetCode/tree/main/0013-roman-to-integer/) | Easy |
 <!---LeetCode Topics End-->
