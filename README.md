@@ -16,8 +16,8 @@ Each problem has its own dedicated directory, named in the format `XXXX-problem-
 
 Here is a list of the problems currently solved in this repository:
 
-| # | Problem Name | <img width=30>Difficulty<img width=30> | Language | Topics | Link to Solution |
-|---|---|---|---|---|---|
+| # | Problem Name | Difficulty | Language | Topics | Link to Solution |
+|---|---|:---:|---|---|---|
 | 0001 | Two Sum | 🟢 Easy | Python | Array, Hash Table | [View](./0001-two-sum) |
 | 0002 | Add Two Numbers | 🟠 Medium | Java, Python | Linked List, Math, Recursion | [View](./0002-add-two-numbers) |
 | 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | Python | Hash Table, String, Sliding Window | [View](./0003-longest-substring-without-repeating-characters) |
