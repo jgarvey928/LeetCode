@@ -17,7 +17,7 @@ Here is a list of the problems currently solved in this repository:
 
 | # | Problem Name | Difficulty | Language | Topics | Link to Solution |
 |---|---|:---:|---|---|---|
-| 0001 | Two Sum | 🟢 Easy | Python | N/A | [View](./0001-two-sum) |
+| 0001 | Two Sum | 🟢 Easy | Python | Array, Hash Table | [View](./0001-two-sum) |
 | 0002 | Add Two Numbers | 🟠 Medium | Java, Python | Linked List, Math, Recursion | [View](./0002-add-two-numbers) |
 | 0003 | Longest Substring Without Repeating Characters | 🟠 Medium | Python | Hash Table, String, Sliding Window | [View](./0003-longest-substring-without-repeating-characters) |
 | 0004 | Median Of Two Sorted Arrays | 🔴 Hard | Python | Array, Binary Search, Divide and Conquer | [View](./0004-median-of-two-sorted-arrays) |
@@ -40,13 +40,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0001-two-sum](https://github.com/jgarvey928/LeetCode/tree/main/0001-two-sum/) | Easy |
-## Hash Table
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0001-two-sum](https://github.com/jgarvey928/LeetCode/tree/main/0001-two-sum/) | Easy |
 <!---LeetCode Topics End-->
