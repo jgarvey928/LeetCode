@@ -5,6 +5,7 @@
 <p align="center">
   <img src="https://leetcode-stats-six.vercel.app/?username=jgarvey928&theme=dark" alt="LeetCode Stats" />
 </p>
+
 # 🚀 LeetCode Solutions
 
 Welcome to my **LeetCode** repository! This repository contains my personal solutions to various LeetCode problems. It serves as a log of my progress in improving my algorithmic thinking, data structure knowledge, and problem-solving skills.
