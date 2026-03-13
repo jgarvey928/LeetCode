@@ -34,19 +34,11 @@ Here is a list of the problems currently solved in this repository:
 | 0121 | Best Time To Buy And Sell Stock | 🟢 Easy | Java | Array, Dynamic Programming | [View](./0121-best-time-to-buy-and-sell-stock) |
 | 0169 | Majority Element | 🟢 Easy | Python | Array, Hash Table, Divide and Conquer, Sorting, Counting | [View](./0169-majority-element) |
 | 0595 | Big Countries | 🟢 Easy | SQL | Database | [View](./0595-big-countries) |
+| 1480 | Running Sum Of 1d Array | 🟢 Easy | Java | Array, Prefix Sum | [View](./1480-running-sum-of-1d-array) |
 | 1603 | Running Sum Of 1d Array | 🟢 Easy | Java | N/A | [View](./1603-running-sum-of-1d-array) |
 | 1791 | Find Center Of Star Graph | 🟢 Easy | Java | N/A | [View](./1791-find-center-of-star-graph) |
 | 1916 | Find Center Of Star Graph | 🟢 Easy | Java | N/A | [View](./1916-find-center-of-star-graph) |
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1480-running-sum-of-1d-array](https://github.com/jgarvey928/LeetCode/tree/main/1480-running-sum-of-1d-array/) | Easy |
-## Prefix Sum
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [1480-running-sum-of-1d-array](https://github.com/jgarvey928/LeetCode/tree/main/1480-running-sum-of-1d-array/) | Easy |
 <!---LeetCode Topics End-->
