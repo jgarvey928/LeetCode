@@ -30,6 +30,7 @@ Here is a list of the problems currently solved in this repository:
 | 0021 | Merge Two Sorted Lists | 🟢 Easy | Java | Linked List, Recursion | [View](./0021-merge-two-sorted-lists) |
 | 0026 | Remove Duplicates From Sorted Array | 🟢 Easy | Java | Array, Two Pointers | [View](./0026-remove-duplicates-from-sorted-array) |
 | 0027 | Remove Element | 🟢 Easy | Java, Python | Array, Two Pointers | [View](./0027-remove-element) |
+| 0055 | Jump Game | 🟠 Medium | Python | Array, Dynamic Programming, Greedy | [View](./0055-jump-game) |
 | 0058 | Length Of Last Word | 🟢 Easy | Python | String | [View](./0058-length-of-last-word) |
 | 0080 | Remove Duplicates From Sorted Array Ii | 🟠 Medium | Java, Python | Array, Two Pointers | [View](./0080-remove-duplicates-from-sorted-array-ii) |
 | 0088 | Merge Sorted Array | 🟢 Easy | Python | Array, Two Pointers, Sorting | [View](./0088-merge-sorted-array) |
@@ -44,17 +45,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0055-jump-game](https://github.com/jgarvey928/LeetCode/tree/main/0055-jump-game/) | Medium |
-## Dynamic Programming
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0055-jump-game](https://github.com/jgarvey928/LeetCode/tree/main/0055-jump-game/) | Medium |
-## Greedy
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0055-jump-game](https://github.com/jgarvey928/LeetCode/tree/main/0055-jump-game/) | Medium |
 <!---LeetCode Topics End-->
