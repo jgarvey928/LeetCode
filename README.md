@@ -46,4 +46,17 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jgarvey928/LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jgarvey928/LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jgarvey928/LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 <!---LeetCode Topics End-->
