@@ -35,6 +35,7 @@ Here is a list of the problems currently solved in this repository:
 | 0080 | Remove Duplicates From Sorted Array Ii | 🟠 Medium | Java, Python | Array, Two Pointers | [View](./0080-remove-duplicates-from-sorted-array-ii) |
 | 0088 | Merge Sorted Array | 🟢 Easy | Python | Array, Two Pointers, Sorting | [View](./0088-merge-sorted-array) |
 | 0121 | Best Time To Buy And Sell Stock | 🟢 Easy | Java | Array, Dynamic Programming | [View](./0121-best-time-to-buy-and-sell-stock) |
+| 0122 | Best Time To Buy And Sell Stock Ii | 🟠 Medium | Python | Array, Dynamic Programming, Greedy | [View](./0122-best-time-to-buy-and-sell-stock-ii) |
 | 0169 | Majority Element | 🟢 Easy | Python | Array, Hash Table, Divide and Conquer, Sorting, Counting | [View](./0169-majority-element) |
 | 0189 | Rotate Array | 🟠 Medium | Python | Array, Math, Two Pointers | [View](./0189-rotate-array) |
 | 0595 | Big Countries | 🟢 Easy | SQL | Database | [View](./0595-big-countries) |
@@ -46,17 +47,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jgarvey928/LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
-## Dynamic Programming
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jgarvey928/LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
-## Greedy
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jgarvey928/LeetCode/tree/main/0122-best-time-to-buy-and-sell-stock-ii/) | Medium |
 <!---LeetCode Topics End-->
