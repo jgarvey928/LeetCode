@@ -47,17 +47,4 @@ Here is a list of the problems currently solved in this repository:
 | 2383 | Add Two Integers | 🟢 Easy | C++, Java | N/A | [View](./2383-add-two-integers) |
 
 <!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0014-longest-common-prefix](https://github.com/jgarvey928/LeetCode/tree/main/0014-longest-common-prefix/) | Easy |
-## String
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0014-longest-common-prefix](https://github.com/jgarvey928/LeetCode/tree/main/0014-longest-common-prefix/) | Easy |
-## Trie
-| Problem Name | Difficulty |
-| ------- | ------- |
-| [0014-longest-common-prefix](https://github.com/jgarvey928/LeetCode/tree/main/0014-longest-common-prefix/) | Easy |
 <!---LeetCode Topics End-->
